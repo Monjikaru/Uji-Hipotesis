@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uji Hipotesis</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang di program Uji Hipotesis!</h1>
+        <label for="testType">Pilih jenis uji:</label>
+        <select id="testType" onchange="showInputFields()">
+            <option value="satu-sampel">Satu Sampel</option>
+            <option value="dua-sampel">Dua Sampel Independen</option>
+            <option value="berpasangan">Berpasangan</option>
+        </select>
+
+        <div id="inputFields"></div>
+
+        <button onclick="performTest()">Uji Hipotesis</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
